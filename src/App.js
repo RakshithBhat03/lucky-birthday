@@ -58,13 +58,22 @@ function App() {
         <div className="socials">My Socials</div>
         <ul className="list">
           <li>
-            <a className="link">Github</a>
+            <a href="https://github.com/RakshithBhat03" className="link">
+              Github
+            </a>
           </li>
           <li>
-            <a className="link">Twitter</a>
+            <a href="https://twitter.com/RakshithBhat1" className="link">
+              Twitter
+            </a>
           </li>
           <li>
-            <a className="link">Linkedin</a>
+            <a
+              href="https://www.linkedin.com/in/rakshithbhat/"
+              className="link"
+            >
+              Linkedin
+            </a>
           </li>
         </ul>
       </footer>

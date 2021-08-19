@@ -63,12 +63,14 @@ h1 {
   height: 2rem;
   font-size: 1.2rem;
   border: 2px var(--primary-color) solid;
+  padding: 0rem 0.5rem;
 }
 #lucky-number {
   margin: 1.5rem;
   height: 2rem;
   font-size: 1.2rem;
   border: 2px var(--primary-color) solid;
+  padding: 0rem 0.5rem;
 }
 #check-lucky {
   margin: 1.5rem auto;
@@ -112,6 +114,9 @@ li {
 }
 .link {
   cursor: pointer;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.2rem;
 }
 .link:hover {
   color: var(--link-color);
