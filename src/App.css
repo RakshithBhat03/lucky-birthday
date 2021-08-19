@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #f3f4f6;
+  --background-color: #348f50;
+  --link-color: #60a5fa;
+}
 .App {
   text-align: center;
 }
@@ -5,6 +10,21 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+body {
+  background: #348f50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #56b4d3,
+    #348f50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #56b4d3,
+    #348f50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: var(--primary-color);
+  text-shadow: 2px 2px 4px #000000;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -28,11 +48,75 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 9rem auto;
+  width: 20vw;
+}
+h1 {
+  margin: 3rem auto;
+  font-size: 2.5rem;
+}
+#dob {
+  margin: 1.5rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  border: 2px var(--primary-color) solid;
+}
+#lucky-number {
+  margin: 1.5rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  border: 2px var(--primary-color) solid;
+}
+#check-lucky {
+  margin: 1.5rem auto;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px var(--primary-color) solid;
+  text-shadow: 2px 2px 4px #000000;
+}
+#check-lucky:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  text-shadow: none;
+}
+label {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.message {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.socials {
+  font-size: 2rem;
+}
+li {
+  text-align: center;
+  display: inline;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+}
+.list {
+  list-style: none;
+
+  text-align: center;
+  margin: 2.5rem auto;
+  margin-left: -40px;
+}
+.link {
+  cursor: pointer;
+}
+.link:hover {
+  color: var(--link-color);
+}
+footer {
+  margin-top: 12rem;
+  bottom: 0;
 }
