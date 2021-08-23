@@ -8,4 +8,4 @@
 
 3. Shows the result to the user.
 
-4. Hosted at
+4. Hosted at https://rakshith-lucky-birthday.netlify.app/
