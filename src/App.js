@@ -15,7 +15,7 @@ function App() {
   }
   function checkLucky(event) {
     if (dob && luckyNumber) {
-      if (sumOf(dob) % Number(luckyNumber) == 0) {
+      if (sumOf(dob) % Number(luckyNumber) === 0) {
         setmessage("Your Birthday is Lucky👌");
       } else {
         setmessage("Your Birthday is Not Lucky😞");
@@ -47,8 +47,7 @@ function App() {
         <input
           id="lucky-number"
           onChange={luckyNumberHandler}
-          type="number"
-        ></input>
+          type="number"></input>
         <button id="check-lucky" onClick={checkLucky}>
           Check
         </button>
@@ -70,8 +69,7 @@ function App() {
           <li>
             <a
               href="https://www.linkedin.com/in/rakshithbhat/"
-              className="link"
-            >
+              className="link">
               Linkedin
             </a>
           </li>
