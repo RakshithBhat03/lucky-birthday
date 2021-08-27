@@ -57,19 +57,29 @@ function App() {
         <div className="socials">My Socials</div>
         <ul className="list">
           <li>
-            <a href="https://github.com/RakshithBhat03" className="link">
+            <a
+              href="https://github.com/RakshithBhat03"
+              className="link"
+              rel="noreferrer noopener"
+              target="_blank">
               Github
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/RakshithBhat1" className="link">
+            <a
+              href="https://twitter.com/RakshithBhat1"
+              className="link"
+              rel="noreferrer noopener"
+              target="_blank">
               Twitter
             </a>
           </li>
           <li>
             <a
               href="https://www.linkedin.com/in/rakshithbhat/"
-              className="link">
+              className="link"
+              rel="noreferrer noopener"
+              target="_blank">
               Linkedin
             </a>
           </li>
@@ -77,6 +87,7 @@ function App() {
             <a
               href="https://rakshithbhat.netlify.app/"
               target="_blank"
+              rel="noreferrer noopener"
               class="link">
               Portfolio
             </a>
