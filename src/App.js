@@ -73,6 +73,14 @@ function App() {
               Linkedin
             </a>
           </li>
+          <li>
+            <a
+              href="https://rakshithbhat.netlify.app/"
+              target="_blank"
+              class="link">
+              Portfolio
+            </a>
+          </li>
         </ul>
       </footer>
     </div>
