@@ -7,19 +7,23 @@ function App() {
   function dobHandler(event) {
     dob = event.target.value;
     dob = dob.replaceAll("-", "");
-    // console.log(dob);
   }
   function luckyNumberHandler(event) {
-    luckyNumber = event.target.value;
-    // console.log(luckyNumber);
+    if (Number(event.target.value) >= 1) {
+      luckyNumber = Number(event.target.value);
+    } else {
+      luckyNumber = -1;
+    }
   }
   function checkLucky(event) {
-    if (dob && luckyNumber) {
+    if (dob && luckyNumber >= 1) {
       if (sumOf(dob) % Number(luckyNumber) === 0) {
         setmessage("Your Birthday is Lucky👌");
       } else {
         setmessage("Your Birthday is Not Lucky😞");
       }
+    } else if (dob && luckyNumber === -1) {
+      setmessage("Enter a positive number!!");
     } else {
       setmessage("You must enter both the fields!");
     }
