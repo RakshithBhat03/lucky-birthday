@@ -52,7 +52,7 @@ function App() {
           id="lucky-number"
           onChange={luckyNumberHandler}
           type="number"></input>
-        <button id="check-lucky" type="submit" onClick={checkLucky}>
+        <button id="check-lucky" onClick={checkLucky}>
           Check
         </button>
         <span className="message">{message}</span>
